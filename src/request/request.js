@@ -14,6 +14,7 @@ const axios = ({
     data,
     config
 }) => {
+    url = "https://wedog.ru" + url;
     method = method.toLowerCase();
     if (method == 'post') {
         return instance.post(url, data, {...config})
